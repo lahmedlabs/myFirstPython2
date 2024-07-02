@@ -9,3 +9,11 @@ price = soup.select("ul#worldExchangeList span.value")
 
 for i, j in zip(country, price):
     print(i.text + ": " + j.text)
+
+
+# 파일에 쓰기
+newFile = "write.txt"
+with open(newFile, mode="w") as f:
+    for i, j in zip(country, price):
+        f.write(i.text + ": " + j.text + "\n")
+
