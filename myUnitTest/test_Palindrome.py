@@ -4,11 +4,8 @@ import Palindrome
 class Test(TestCase):
     def test_palindrome_true(self):
         self.assertTrue(Palindrome.is_palindrome("A man, a plan, a canal, Panama"))
-
-    # 테스트 케이스
     def test_palindrome_false(self):
         self.assertFalse(Palindrome.is_palindrome("hello"))
-
 
 # print(is_palindrome(""))  # True
 # print(is_palindrome("racecar"))  # True
